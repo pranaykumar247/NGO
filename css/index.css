@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
+*{
+    text-decoration: none;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    /* background: linear-gradient(120deg ,rgb(244, 244, 219),rgb(244, 231, 207)); */
+}
+header{
+    top:0;
+    position: sticky;
+    overflow: hidden;
+}
+
+/* SECTION 1 */
+
+.section-1,
+.section-2{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+background-color: rgb(236, 223, 182);
+}
+
+.block-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mail{
+    color: black;
+    font-size: 1.1em;
+}
+.mail:hover{
+    color: blue;
+}
+
+.block-1 div:first-child{
+    margin-right: 4rem;
+}
+
+.social-btn a i{
+    font-size: 1.6em;
+    color: dimgrey;
+    margin: 10px 6px;
+
+}
+.social-btn a i:hover{
+    color: rgb(11, 139, 243);
+}
+.logo img{
+    width: 60px;
+    height: 50px;
+}
+/* SECTION 2 */
+
+.phone-appointment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.phone-number{
+    font-size: 1.3em;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+.donation button{
+    border: none;
+    background-color: rgb(255, 148, 127);
+    font-size: 1.3em;
+    color: white;
+    outline: none;
+    padding: 10px 12px;
+    border-radius: 30px;
+    margin: 0px 15px;
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+}
+.donation button:hover{
+    box-shadow: 0px 0px 10px rgb(247, 102, 74);
+    color: rgb(7, 7, 7);
+    background-color: rgb(250, 45, 4);
+}
+/* NAVBAR */
+nav{
+    background-color: rgb(255, 251, 43);
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    cursor: pointer;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    font-size: 1em;
+    display: block;
+    color: black;
+    padding:8px 10px;
+    margin: 0px 5px;
+    font-weight: 500;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-radius: 2px;
+}
+
+nav ul li a:hover{
+    background-color: rgb(241, 30, 111);
+    color: white;
+    border-bottom: 4px solid black;
+}
+#toggle{
+    display: none;
+}
+#toggle-btn{
+    text-align: right;
+    display: none;
+}
+#toggle-btn i{
+    font-size:1.3em;
+    padding: 7px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.slider {
+    width: 100%;
+    height: 400px;
+    background: url(../images/guria1.jpg) no-repeat center;
+    background-repeat: no-repeat;
+    margin: 30px 10px;
+    /* position: absolute; */
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    25% {
+        background: url(../images/guria2.jpg) no-repeat center;
+        background-repeat: no-repeat;
+    }
+
+    50% {
+        background: url(../images/guria3.jpg) no-repeat center;
+        background-repeat: no-repeat;
+    }
+
+    75% {
+        background: url(../images/guria4.jpg) no-repeat center;
+        background-repeat: no-repeat;
+    }
+
+    100% {
+        background: url(../images/guria1.jpg) no-repeat center;
+        background-repeat: no-repeat;
+    }
+}
+
+.home-text p {
+    margin: 0;
+    overflow: hidden;
+    
+}
+
+ .home-text p span {
+    font-size: 2em;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(14, 240, 168);
+    /* background-color: rgb(255, 252, 252); */
+    font-weight: 1000;
+    /* display: inline-block; */
+    line-height: 50px;
+    display: none;
+    width: auto;
+    /* position: absolute; */
+}
+
+ .home-text p span.text-in {
+    text-align: left;
+    display: block;
+    animation: textIn 1s ease;
+}
+
+ .home-text p span.text-out {
+    text-align: left;
+    animation: textOut 8s ease;
+}
+
+@keyframes textIn {
+    0% {
+        text-align: left;
+        /* background-position: 0 100%;*/
+        /* background-color: aquamarine; */
+        color: brown;
+        transform: translateY(100%);
+
+    }
+
+    50% {
+        /* background-position: 0 100%;*/
+        color: brown;
+        /* background-color: aquamarine; */
+        transform: translateY(100%);
+
+    }
+
+    100% {
+        /* background-position: 0 100%;*/
+        color: brown;
+        /* background-color: aquamarine; */
+        transform: translateY(0%);
+    }
+}
+
+@keyframes textOut {
+    0% {
+        /* background-position: 0 100%;*/
+        transform: translateY(0%);
+        color: brown;
+        /* background-color: aquamarine; */
+    }
+
+    50% {
+        /* background-position: 0 100%;*/
+        color: brown;
+        /* background-color: aquamarine; */
+        transform: translateY(0%);
+    }
+
+    100% {
+        /* background-color: aquamarine; */
+        color: brown;
+        /* background-position: 0 100%;
+        background-color: #ff2c45; */
+        transform: translateY(-100%);
+
+    }
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width:1201) and (min-width:768px) {
+    nav ul li a{
+        font-size: .6em;
+    }
+    
+}
+
+@media screen and (max-width:768px) and (min-width:426px) {
+    .section-1{
+        font-size: 14px;
+    }
+    .block-1{
+        flex-direction: column;   
+    }
+
+    .block-1 div:first-child{
+        margin-right: 0rem;
+    }
+    .social-btn a i{
+        font-size: 1.3em;
+    }
+    .section-2{
+        flex-direction: column;
+        padding-bottom: 12px;
+    }
+    .phone-number{
+        font-size:1.1em;
+    }
+    .donation button{
+        font-size: 1em;
+    }
+    #toggle-btn{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width:426px){
+    .section-1{
+        font-size: 14px;
+        flex-direction: column;
+    }
+    .social-btn a i{
+        font-size: 1.1em;
+    }
+    .section-2{
+        flex-direction: column;
+        padding-bottom: 12px;
+    }
+    .phone-number{
+        font-size:.9em;
+    }
+    .donation button{
+        font-size: .8em;
+    }
+    #toggle-btn{
+        display: block;
+    }
+    #toggle-btn i{
+        font-size: 20px;
+        padding: 8px;
+    }
+    nav ul{
+        display: none;
+    }
+    #toggle:checked + ul{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        text-align: left;
+    }
+    
+}

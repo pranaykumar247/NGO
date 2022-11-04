@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.container{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+    background: rgb(121, 4, 80);
+}
+.container h1{
+    font-family: 'Signika Negative', sans-serif;
+}
+h1{
+    text-align: center;
+    margin: 12px 0;
+    color: aliceblue;
+    text-shadow: 1px 3px black;
+}
+.myInput{
+    width: 40%;
+    padding: 9px;
+    margin: 8px;
+    border: 2px solid maroon;
+    border-radius: 10px;
+    outline:none;
+    
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    padding: 12px 16px;
+    font-size: 18px;
+    /* border: 2px solid maroon; */
+    box-shadow: 0px 0px 0px 2px white;
+    border-radius: 10px;
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+    outline: none;
+}
+.btn:hover{
+    background: white;
+    color: black;
+    box-shadow: 0px 0px 0px 2px black;
+
+}
